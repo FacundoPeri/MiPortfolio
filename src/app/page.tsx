@@ -38,15 +38,16 @@ export default function Home() {
   }, [darkMode]);
 
   return (
-    <main className="min-h-screen bg-white text-zinc-900 dark:bg-zinc-950 dark:text-white transition-colors duration-300">
+    <main className="min-h-screen md:pl-16 bg-white text-zinc-900 dark:bg-zinc-950 dark:text-white transition-colors duration-300">
       <Navbar darkMode={darkMode} toggleTheme={() => setDarkMode(!darkMode)} />
 
       {/* Hero */}
-      <section className="relative max-w-6xl mx-auto px-6 py-28 overflow-hidden">
-        {/* Background blobs */}
-        <div className="pointer-events-none absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-indigo-500/10 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-violet-500/10 blur-3xl" />
+      <div className="relative overflow-hidden">
+        {/* Background blobs — full width */}
+        <div className="pointer-events-none absolute -top-48 right-0 w-[800px] h-[800px] rounded-full bg-indigo-500/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-48 left-0 w-[700px] h-[700px] rounded-full bg-violet-500/10 blur-3xl" />
 
+      <section className="relative max-w-6xl mx-auto px-6 py-28">
         <div className="relative grid md:grid-cols-2 gap-14 items-center">
           <motion.div
             className="space-y-6"
@@ -117,6 +118,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      </div>
 
       <About />
       <Skills />

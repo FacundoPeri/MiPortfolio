@@ -4,7 +4,7 @@ import { Mail, MapPin, ExternalLink } from "lucide-react";
 
 const container: Variants = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.1 } },
+  show: { transition: { staggerChildren: 0.12 } },
 };
 
 const item: Variants = {

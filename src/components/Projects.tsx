@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react";
 
 const container: Variants = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.1 } },
+  show: { transition: { staggerChildren: 0.12 } },
 };
 
 const item: Variants = {
@@ -62,7 +62,7 @@ export default function Projects() {
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2.5 py-1 text-xs rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800"
+                      className="px-2.5 py-1 text-xs rounded-full bg-zinc-200 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300"
                     >
                       {tech}
                     </span>

@@ -5,7 +5,7 @@ import { CalendarDays } from "lucide-react";
 
 const container: Variants = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.15 } },
+  show: { transition: { staggerChildren: 0.12 } },
 };
 
 const item: Variants = {

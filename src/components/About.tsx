@@ -3,7 +3,7 @@ import { motion, type Variants } from "framer-motion";
 
 const container: Variants = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.15 } },
+  show: { transition: { staggerChildren: 0.12 } },
 };
 
 const item: Variants = {
@@ -52,8 +52,9 @@ export default function About() {
           {cards.map((card) => (
             <div
               key={card.title}
-              className="p-5 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800"
+              className="relative p-5 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500/50 transition-all duration-300 overflow-hidden"
             >
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-indigo-500 to-violet-500" />
               <h4 className="font-semibold">{card.title}</h4>
               <p className="text-zinc-600 dark:text-zinc-400 mt-2">{card.content}</p>
             </div>

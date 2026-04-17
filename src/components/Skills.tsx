@@ -4,7 +4,7 @@ import { skills } from "@/data/skills";
 
 const container: Variants = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.1 } },
+  show: { transition: { staggerChildren: 0.12 } },
 };
 
 const item: Variants = {
@@ -39,8 +39,9 @@ export default function Skills() {
             <motion.div
               key={group.category}
               variants={item}
-              className="p-5 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-4"
+              className="relative p-5 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500/50 transition-all duration-300 space-y-4 overflow-hidden"
             >
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-indigo-500 to-violet-500" />
               <h4 className="font-semibold text-xs uppercase tracking-widest text-zinc-500">
                 {group.category}
               </h4>
@@ -48,7 +49,7 @@ export default function Skills() {
                 {group.items.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 text-xs rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium"
+                    className="px-2.5 py-1 text-xs rounded-full bg-zinc-200 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300"
                   >
                     {skill}
                   </span>
