@@ -22,7 +22,7 @@ export default function Contact() {
 
         <div className="grid sm:grid-cols-2 gap-4">
           <a
-            href="mailto:tuemail@ejemplo.com"
+            href="mailto:facundoperi01@gmail.com"
             className="p-5 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-800 hover:border-zinc-600 transition"
           >
             <p className="font-semibold">Email</p>

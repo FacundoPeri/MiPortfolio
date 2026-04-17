@@ -42,7 +42,7 @@ export default function About() {
 
           <div className="p-5 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-800">
             <h4 className="font-semibold">Ubicación</h4>
-            <p className="text-zinc-600 dark:text-zinc-600 dark:text-zinc-400 mt-2">
+            <p className="text-zinc-600 dark:text-zinc-400 mt-2">
               La Plata, Buenos Aires, Argentina
             </p>
           </div>
